@@ -20,21 +20,22 @@
     </nav> <br>
     <div class="label-contact">
         <form  class="input-contact">
-    <label style="font-weight: bold; font-size:20px" >Name</label>
-    <input type="text" style="padding: 10px; border-radius:10px; background-color:#dddddd; " />
-    <label style="font-weight: bold;">Email</label>
-    <input  type="text" class="input-contact"/>
+    <label style="font-weight: bold; font-size:20px">Name</label>
+    <input type="text" style="padding: 10px; border-radius:10px; background-color:#dddddd; " id="inputName"/>
+    <label style="font-weight: bold;" >Email</label>
+    <input  type="text" class="input-contact" id="inputEmail"/>
     <label style="font-weight: bold;">Phone Number</label>
-    <input type="text" class="input-contact"/>
+    <input type="text" class="input-contact" id="phoneNumber"/>
     <label>Subject</label>
-    <select>
+    <select id="Subject">
+        <option></option>
         <option>Fronted developer</option>
         <option>Back-end developer</option>
         <option>Full stack developer</option>
     </select>
     <label>Your Message</label>
-    <textarea></textarea>
-    <button  class="submit-contact">Submit</button>
+    <textarea id="message"></textarea>
+  <input type="button" value="Submit" class="submit-contact" onclick= "submitData()" />
             </form>
 
 
